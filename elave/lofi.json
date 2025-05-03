@@ -1,0 +1,38 @@
+{
+  "username": "elave0158",
+  "new_username": "elave0158/lofi",
+  "section_mode": true,
+  "album": [
+    "lofi"
+  ],
+  "init_jumlah_photo": 250,
+  "admob_banner_id": "ca-app-pub-5974957980845574/9004435049",
+  "admob_interstitial_id": "ca-app-pub-5974957980845574/9282253753",
+  "admob_native_id": "ca-app-pub-5974957980845574/3569093772",
+  "admob_rewarded_interstitial_id": "",
+  "admob_open_app_id": "ca-app-pub-5974957980845574/2256012102",
+
+  "admob_hpk_1": "sticth",
+  "admob_hpk_2": "fashion",
+  "admob_hpk_3": "blue koala",
+  "admob_hpk_4": "luxury car",
+  "admob_hpk_5": "insurance",
+
+  "startapp_app_id": "12345677890",
+
+  "interstitial_inverval": 5,
+
+  "list_ads": [
+    "ADMOB",
+    "APPLOVIN",
+    "UNITY"
+  ],
+
+  "unity_id": "1234567",
+  "unity_banner": "Android_Banner",
+  "unity_interstitial": "Android_Interstitial",
+
+  "applovin_sdk_key": "",
+  "applovin_banner_id":"",
+  "applovin_inter_id":""
+}

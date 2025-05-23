@@ -28,13 +28,13 @@
 
   "list_ads": [
     "ADMOB",
-    "APPLOVIN",
-    "UNITY"
+    "UNITY",
+    "APPLOVIN"
   ],
 
-  "unity_id": "1234567",
-  "unity_banner": "Android_Banner",
-  "unity_interstitial": "Android_Interstitial",
+  "unity_id": "4821847",
+  "unity_banner": "Banner_Android",
+  "unity_interstitial": "Interstitial_Android",
 
   "applovin_sdk_key": "",
   "applovin_banner_id":"",

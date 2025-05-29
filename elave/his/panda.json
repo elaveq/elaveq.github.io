@@ -3,10 +3,9 @@
   "new_username": "chichijaya3/panda",
   "section_mode": true,
   "album": [
-    "panda"
+    "panda",
   ],
-  
-  "init_jumlah_photo": 300,
+  "init_jumlah_photo": 250,
   "admob_banner_id": "ca-app-pub-2326667444318150/2821114159",
   "admob_interstitial_id": "ca-app-pub-2326667444318150/6729419633",
   "admob_native_id": "",

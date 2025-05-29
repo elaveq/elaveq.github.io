@@ -23,8 +23,8 @@
   "interstitial_inverval": 5,
 
   "list_ads": [
-    "ADMOB",
     "UNITY",
+    "ADMOB",
     "APPLOVIN"
 
   ],

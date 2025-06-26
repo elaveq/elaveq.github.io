@@ -8,7 +8,7 @@
   "init_jumlah_photo": 300,
   "admob_banner_id": "ca-app-pub-5974957980845574/5153872298",
   "admob_interstitial_id": "ca-app-pub-5974957980845574/9512516173",
-  "admob_native_id": "ca-app-pub-5974957980845574/3840790626",
+  "admob_native_id": "",
   "admob_rewarded_interstitial_id": "",
   "admob_open_app_id": "ca-app-pub-5974957980845574/3582366790",
 
@@ -28,7 +28,7 @@
     "APPLOVIN"
   ],
 
-  "unity_id": "5687541",
+  "unity_id": "123456789",
   "unity_banner": "banner",
   "unity_interstitial": "interstitial",
 

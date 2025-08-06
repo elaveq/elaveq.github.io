@@ -24,14 +24,15 @@
 
   "startapp_app_id": "12345677890",
 
-  "interstitial_inverval": 5,
+  "interstitial_inverval": 3,
 
   "list_ads": [
     "UNITY",
+    "ADMOB",
     "APPLOVIN"
   ],
 
-  "unity_id": "4821847",
+  "unity_id": "4828560",
   "unity_banner": "Banner_Android",
   "unity_interstitial": "Interstitial_Android",
 

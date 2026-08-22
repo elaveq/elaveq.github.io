@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebijakan Privasi - Driver CCJ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0284c7;
+            --primary-dark: #0369a1;
+            --primary-light: #e0f2fe;
+            --secondary: #0f172a;
+            --accent: #38bdf8;
+            --bg-body: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+            --radius: 16px;
+            --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.7;
+            padding-bottom: 60px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0369a1 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 24px;
+            background-color: var(--bg-body);
+            border-radius: 24px 24px 0 0;
+        }
+
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(56, 189, 248, 0.15);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            color: #38bdf8;
+            padding: 6px 14px;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            margin-bottom: 12px;
+        }
+
+        .header p {
+            color: #94a3b8;
+            font-size: 1.05rem;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            padding: 36px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            margin-bottom: 28px;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--secondary);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        h2 .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            background: var(--primary-light);
+            color: var(--primary);
+            border-radius: 10px;
+            font-size: 1.2rem;
+        }
+
+        p {
+            margin-bottom: 14px;
+            color: var(--text-main);
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 18px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+
+        li strong {
+            color: var(--secondary);
+        }
+
+        .alert-box {
+            background-color: #f0fdf4;
+            border-left: 4px solid #22c55e;
+            padding: 16px 20px;
+            border-radius: 8px;
+            margin: 18px 0;
+            color: #166534;
+            font-size: 0.95rem;
+        }
+
+        .highlight-box {
+            background-color: var(--primary-light);
+            border: 1px solid #bae6fd;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 18px 0;
+        }
+
+        .footer {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-top: 40px;
+        }
+
+        .footer a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        @media (max-width: 640px) {
+            .header h1 {
+                font-size: 1.85rem;
+            }
+            .card {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-content">
+            <span class="badge">Legal Document</span>
+            <h1>Kebijakan Privasi</h1>
+            <p>Aplikasi Driver CCJ (Delivery Management System)</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <div class="card">
+            <h2><span class="icon">📋</span> 1. Pendahuluan</h2>
+            <p>
+                Kebijakan Privasi ini menjelaskan bagaimana aplikasi <strong>Driver CCJ</strong> mengumpulkan, menggunakan, menyimpan, dan melindungi informasi pribadi pengguna (khususnya mitra pengemudi/driver resmi).
+            </p>
+            <p>
+                Aplikasi ini merupakan perangkat lunak operasional internal yang diperuntukkan bagi driver terdaftar dalam rangka pengelolaan penugasan surat jalan, navigasi rute pengiriman barang, pelaporan pemeriksaan pra-jalan kendaraan (P2H), dan konfirmasi serah terima pengiriman (e-POD).
+            </p>
+        </div>
+
+        <div class="card">
+            <h2><span class="icon">📍</span> 2. Data Lokasi & Pelacakan Latar Belakang (Background Location)</h2>
+            <p>
+                Aplikasi ini mengumpulkan dan memproses data lokasi presisi Anda (GPS) dengan ketentuan sebagai berikut:
+            </p>
+            <ul>
+                <li><strong>Lokasi Saat Aplikasi Digunakan (Foreground):</strong> Menampilkan posisi terkini driver pada peta rute navigasi dan mengarahkan rute menuju alamat toko/pelanggan.</li>
+                <li><strong>Lokasi di Latar Belakang (Background Location):</strong> Melacak pergerakan pengiriman saat driver sedang dalam tugas aktif (Surat Jalan aktif), bahkan ketika layar perangkat terkunci atau aplikasi berjalan di latar belakang.</li>
+                <li><strong>Geofence Detection:</strong> Memverifikasi otomatis kedatangan driver saat telah memasuki radius lokasi gudang penjemputan atau lokasi tujuan pengantaran.</li>
+            </ul>
+            <div class="alert-box">
+                🛡️ <strong>Privasi Lokasi Anda Terjamin:</strong> Pelacakan lokasi di latar belakang hanya aktif saat driver memiliki penugasan pengiriman yang berstatus <em>Sedang Berjalan (Active Delivery)</em>, dan akan berhenti secara otomatis ketika pengiriman telah selesai atau diserahkan.
+            </div>
+        </div>
+
+        <div class="card">
+            <h2><span class="icon">📷</span> 3. Akses Kamera & Galeri Foto</h2>
+            <p>
+                Aplikasi memerlukan izin akses ke perangkat kamera dan penyimpanan foto untuk keperluan:
+            </p>
+            <ul>
+                <li><strong>Bukti Pengiriman (Proof of Delivery / e-POD):</strong> Mengambil foto serah terima barang di lokasi tujuan dan foto surat jalan bertanda tangan pelanggan sebagai bukti sah penyelesaian pengiriman.</li>
+                <li><strong>Pemeriksaan Kendaraan (P2H):</strong> Mengambil foto kondisi fisik kendaraan jika ditemukan kendala fisik saat pemeriksaan pra-jalan.</li>
+                <li><strong>Permohonan Perbaikan:</strong> Melampirkan foto bagian armada yang mengalami kerusakan untuk pengajuan servis ke tim mekanik.</li>
+                <li><strong>Foto Profil Driver:</strong> Memperbarui foto identitas driver pada profil akun.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2><span class="icon">👤</span> 4. Informasi Akun & Data Perangkat</h2>
+            <p>Data identitas dan teknis yang kami kumpulkan meliputi:</p>
+            <ul>
+                <li><strong>Data Akun:</strong> Nama pengemudi, nomor telepon, alamat email operasional, dan ID pengemudi.</li>
+                <li><strong>Token Notifikasi (FCM Token):</strong> Token unik perangkat untuk mengirimkan notifikasi push ketika terdapat penugasan surat jalan baru atau instruksi revisi rute.</li>
+                <li><strong>Log & Diagnostik:</strong> Laporan crash dan kestabilan aplikasi guna peningkatan performa sistem.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2><span class="icon">🔒</span> 5. Keamanan Data</h2>
+            <p>
+                Kami menerapkan standar keamanan teknis terkini untuk menjaga kerahasiaan data Anda:
+            </p>
+            <ul>
+                <li>Seluruh komunikasi data antara aplikasi dan server diamankan menggunakan enkripsi <strong>HTTPS / SSL (TLS)</strong>.</li>
+                <li>Data lokasi dan bukti pengiriman disimpan pada server aman dengan hak akses terbatas yang hanya dapat diakses oleh tim dispatcher dan manajemen operasional resmi.</li>
+                <li>Kami <strong>TIDAK PERNAH</strong> menjual, menyewakan, atau membagikan data lokasi maupun data pribadi pengguna kepada pihak ketiga untuk keperluan iklan/komersial.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2><span class="icon">🗑️</span> 6. Hak Pengguna & Penghapusan Data</h2>
+            <p>
+                Sebagai pengemudi terdaftar, Anda berhak untuk:
+            </p>
+            <ul>
+                <li>Memeriksa riwayat penugasan dan data lokasi pengiriman yang tersimpan.</li>
+                <li>Memperbarui informasi profil atau foto akun.</li>
+                <li>Meminta penonaktifan akun atau penghapusan data riwayat dengan menghubungi tim administrator operasional.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2><span class="icon">📞</span> 7. Kontak & Informasi Pengembang</h2>
+            <p>
+                Apabila Anda memiliki pertanyaan, kendala, atau saran terkait kebijakan privasi ini, silakan hubungi tim kami:
+            </p>
+            <div class="highlight-box">
+                <p><strong>Tim Operasional & IT CCJ Delivery</strong></p>
+                <p>📧 Email: <a href="mailto:support@chichijaya.biz.id" style="color: var(--primary); text-decoration: none;">support@chichijaya.biz.id</a></p>
+                <p>🌐 Website: <a href="https://delivery.mmeidyf.cv" target="_blank" style="color: var(--primary); text-decoration: none;">https://delivery.mmeidyf.cv</a></p>
+                <p>📍 Lokasi: Indonesia</p>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 12px;">
+                Terakhir diperbarui: 22 Agustus 2026
+            </p>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Driver CCJ. All rights reserved. | <a href="support.html">Pusat Bantuan</a></p>
+    </footer>
+
+</body>
+</html>

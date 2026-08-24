@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pusat Bantuan & Dukungan - Driver CCJ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0284c7;
+            --primary-dark: #0369a1;
+            --primary-light: #e0f2fe;
+            --secondary: #0f172a;
+            --accent: #38bdf8;
+            --bg-body: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+            --radius: 16px;
+            --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.7;
+            padding-bottom: 60px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0369a1 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 24px;
+            background-color: var(--bg-body);
+            border-radius: 24px 24px 0 0;
+        }
+
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(56, 189, 248, 0.15);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            color: #38bdf8;
+            padding: 6px 14px;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            margin-bottom: 12px;
+        }
+
+        .header p {
+            color: #94a3b8;
+            font-size: 1.05rem;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            margin-bottom: 36px;
+        }
+
+        .contact-card {
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            padding: 28px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 14px 30px -5px rgba(0, 0, 0, 0.08);
+        }
+
+        .contact-icon {
+            width: 56px;
+            height: 56px;
+            background: var(--primary-light);
+            color: var(--primary);
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 16px;
+            margin: 0 auto 16px auto;
+        }
+
+        .contact-card h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--secondary);
+            margin-bottom: 8px;
+        }
+
+        .contact-card p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+        }
+
+        .btn-contact {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            transition: background-color 0.2s;
+        }
+
+        .btn-contact:hover {
+            background-color: var(--primary-dark);
+        }
+
+        .section-card {
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            padding: 36px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            margin-bottom: 28px;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--secondary);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--border);
+            padding: 18px 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .faq-question {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--secondary);
+            margin-bottom: 8px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .faq-question span {
+            color: var(--primary);
+        }
+
+        .faq-answer {
+            color: var(--text-main);
+            font-size: 0.95rem;
+            padding-left: 24px;
+        }
+
+        .footer {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-top: 40px;
+        }
+
+        .footer a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        @media (max-width: 640px) {
+            .header h1 {
+                font-size: 1.85rem;
+            }
+            .section-card {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-content">
+            <span class="badge">Customer & Driver Support</span>
+            <h1>Pusat Bantuan & Dukungan</h1>
+            <p>Bantuan Teknis dan Operasional Aplikasi Driver CCJ</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- Contact Channels -->
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="contact-icon">📧</div>
+                <h3>Dukungan Email</h3>
+                <p>Kirimkan pertanyaan atau kendala teknis Anda ke tim support.</p>
+                <a href="mailto:support@chichijaya.biz.id" class="btn-contact">Kirim Email</a>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">💬</div>
+                <h3>Pusat Operasional</h3>
+                <p>Hubungi Dispatcher & IT CCJ via WhatsApp operasional.</p>
+                <a href="https://wa.me/6281234567890" target="_blank" class="btn-contact">Hubungi Dispatcher</a>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">⏱️</div>
+                <h3>Jam Layanan</h3>
+                <p>Senin - Sabtu: 07.00 - 20.00 WIB<br>Minggu/Libur: Layanan Darurat</p>
+                <span style="font-size: 0.85rem; color: #16a34a; font-weight: 600;">● Tim Siap Membantu</span>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="section-card">
+            <h2><span>❓</span> Pertanyaan yang Sering Diajukan (FAQ)</h2>
+
+            <div class="faq-item">
+                <div class="faq-question"><span>Q:</span> Bagaimana cara mendapatkan akun login driver?</div>
+                <div class="faq-answer">
+                    Akun driver dibuat dan didaftarkan langsung oleh Administrator Operasional CCJ. Driver yang baru bergabung akan menerima username dan password sementara melalui tim logistik.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question"><span>Q:</span> Mengapa aplikasi meminta izin "Selalu Izinkan Lokasi" (Always Allow Location)?</div>
+                <div class="faq-answer">
+                    Izin lokasi di latar belakang diperlukan agar sistem dapat melacak posisi armada pengiriman secara berkala dan mendeteksi kedatangan Anda di lokasi gudang atau toko tujuan secara otomatis tanpa harus membuka layar ponsel terus-menerus.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question"><span>Q:</span> Bagaimana jika gagal mengunggah foto bukti pengiriman (e-POD)?</div>
+                <div class="faq-answer">
+                    Pastikan perangkat Anda terhubung ke internet dan izin kamera telah diaktifkan di menu Pengaturan HP (Settings -> Driver CCJ -> Izinkan Kamera). Jika sinyal di lokasi lemah, foto akan disimpan sementara dan diunggah kembali saat sinyal stabil.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question"><span>Q:</span> Kapan pengisian formulir P2H (Pemeriksaan Pra-Jalan) harus dilakukan?</div>
+                <div class="faq-answer">
+                    Checklist P2H wajib diisi setiap pagi sebelum memulai perjalanan pengiriman pertama guna memastikan kondisi rem, ban, oli, lampu, dan dokumen kendaraan dalam keadaan layak jalan.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question"><span>Q:</span> Bagaimana jika terjadi kendala pada unit kendaraan di jalan?</div>
+                <div class="faq-answer">
+                    Gunakan menu <strong>Permohonan Perbaikan (Repair Request)</strong> di dalam aplikasi untuk melampirkan foto bagian yang rusak dan deskripsi kendala agar tim mekanik segera menindaklanjuti.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question"><span>Q:</span> Bagaimana jika saya lupa password akun?</div>
+                <div class="faq-answer">
+                    Silakan hubungi tim Admin / Dispatcher logistik CCJ untuk melakukan reset password akun Anda.
+                </div>
+            </div>
+        </div>
+
+        <!-- App Guide -->
+        <div class="section-card">
+            <h2><span>📖</span> Panduan Cepat Alur Tugas Pengiriman</h2>
+            <ol style="margin-left: 20px; line-height: 1.9;">
+                <li><strong>Login</strong> menggunakan akun driver resmi Anda.</li>
+                <li>Lakukan pengisian <strong>Checklist P2H</strong> sebelum armada berangkat.</li>
+                <li>Buka daftar <strong>Surat Jalan</strong> di Dashboard dan pilih penugasan aktif.</li>
+                <li>Gunakan <strong>Peta Rute</strong> untuk navigasi ke titik tujuan.</li>
+                <li>Setelah tiba, serahkan barang dan ambil <strong>Foto Bukti Serah Terima</strong> serta tanda tangan penerima.</li>
+                <li>Tekan tombol <strong>Selesai Pengiriman</strong> untuk menyelesaikan penugasan.</li>
+            </ol>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Driver CCJ. All rights reserved. | <a href="privacy-policy.html">Kebijakan Privasi</a></p>
+    </footer>
+
+</body>
+</html>
